@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.3",
+  "version": "1.0.0",
+  "id": "d55d08d9-bacb-4567-942f-afd85d632dcc",
+  "packageName": "com.microsoft.teams.icebreaker",
+  "developer": {
+    "name": "Xylos N.V.",
+    "websiteUrl": "https://xylos.com",
+    "privacyUrl": "https://www.xylos.com/nl/privacy",
+    "termsOfUseUrl": "https://xylos.com"
+  },
+  "icons": {
+    "color": "logo.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Xylos Matchmaker"
+  },
+  "description": {
+    "short": "The Xylos Matchmaker bot randomly pairs colleagues to build team unity.",
+    "full": "How do you meet new colleagues? The Xylos Matchmaker is a socially skilled chatbot that weekly pairs you with a colleague. Spend a lunchbreak with your match or have a video-meetup and get to know colleagues better. "
+  },
+  "accentColor": "#64A2CC",
+  "bots": [
+    {
+      "botId": "<enter bot id here>",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": true
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<enter base domain here>"
+  ]
+}
