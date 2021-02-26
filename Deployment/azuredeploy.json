@@ -36,7 +36,7 @@
         "appIconUrl": {
             "type": "string",
             "minLength": 1,
-            "defaultValue": "https://github.com/WouterXylos/Matchmaker/raw/main/Manifest/logo.png",
+            "defaultValue": "https://github.com/WouterXylos/Matchmaker_release/raw/main/Manifest/logo.png",
             "metadata": {
                 "description": "The link to the icon for the bot. It must resolve to a PNG file."
             }
@@ -309,6 +309,10 @@
                         {
                             "name": "CosmosCollectionUsers",
                             "value": "UsersOptInStatus"
+                        },
+                        {
+                            "name": "CosmosCollectionMatches",
+                            "value": "Matches"
                         },
                         {
                             "name": "MaxPairUpsPerTeam",
