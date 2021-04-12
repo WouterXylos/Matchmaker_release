@@ -64,7 +64,18 @@
             "metadata":{
                 "description": "The day of the week when matches are created."
             }
-        }, 
+        },
+		"UseFindTime": {
+            "type":"string", 
+            "allowedValues": [
+                "true", 
+                "false"
+            ], 
+            "defaultValue": "true",
+            "metadata":{
+                "description": "Enable or disable Find Meeting Time integration."
+            }
+        },		
         "matchingHour": {
             "type": "int",
             "allowedValues": [
@@ -141,7 +152,7 @@
               "Standard",
               "Premium"
             ],
-            "defaultValue": "Standard",
+            "defaultValue": "Basic",
             "metadata": {
               "description": "The pricing tier for the hosting plan."
             }
@@ -333,6 +344,10 @@
                         {
                             "name": "MatchgroupSize",
                             "value": "[parameters('matchgroupSize')]"
+                        },
+						{
+                            "name": "UseFindTime",
+                            "value": "[parameters('UseFindTime')]"
                         },
                         {
                             "name": "ManifestAppId", 
